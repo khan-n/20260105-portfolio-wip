@@ -25,12 +25,24 @@
 
 /* **BUTTON Style Start** */
 .btn {
-    width: 150px;
-    height: 65px;
+    /* width: 150px; */
+    /* height: 65px; */
     padding: 18px 35px;
     background-color: #FD6E0A;
     color: white;
     border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn2 {
+    padding: 18px 35px;
+    background-color: transparent;
+    color: #FD6E0A;
+    border: 1px solid #FD6E0A;
     border-radius: 5px;
     font-size: 20px;
     font-weight: bold;
@@ -45,12 +57,17 @@
 header{
     background-color: #FFF8F3;
     padding-top: 50px;
+    /* Left Side Text Design: Developer Image & Right sided Rainbow Image adding in same inline command using comma as shown below */
+    background: url(../images/developer.png), url(../images/header_bg.png), #FFF8F3;
+    background-position: left, right bottom;
+    background-size: contain, auto;
+    background-repeat: no-repeat;
 } /* ===Header Styles End=== */
 
 /* **NAV Style Start** */
 nav {
-    width: 71%;
-    max-width: 1140px;
+    width: 82%;
+    max-width: 2560px;
     /* border: 1px solid red; */
     margin: 0 auto;
     display: flex;
@@ -76,4 +93,46 @@ nav .nav-list li a {
 nav .nav-list li a:hover {
     color: #FD6E0A;
 } /* ===NAV Style End=== */
+
+/* **BIG BANNER SECTION START** */
+#big-banner {
+    /* border: 1px solid red; */
+    margin: 45px 35px 0 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#big-banner .big-banner-content {
+    max-width: 800px;
+}
+
+#big-banner .big-banner-content h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #474747;
+    margin-bottom: 5px;
+}
+
+#big-banner .big-banner-content h1 {
+    font-size: 85px;
+    font-weight: bold;
+    color: #181818;
+    margin-bottom: 20px;
+}
+
+#big-banner .big-banner-content p {
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 30px;
+    line-height: 30px;
+    max-width: 750px;
+} 
+
+#big-banner .my-image img {
+    max-width: 585px;
+    height: auto;
+    vertical-align: middle;
+}
+/* ===BIG BANNER SECTION END=== */
 
