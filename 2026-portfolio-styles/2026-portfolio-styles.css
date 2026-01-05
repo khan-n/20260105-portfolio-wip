@@ -1,0 +1,79 @@
+/* **Adding Box Sizing, Remove all Margin & Padding from the whole page** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /* ===Box Sizing Added, Margin & Padding Removal done=== */
+
+/* *************SHARED STYLE************* */
+
+/* **Font Style Start** */
+.font-open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+} /* **Font Style End** */
+
+/* **Logo Style Start** */
+.logo-kn h2 {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.cap-color {
+    color: #FD6E0A;
+} /* ===Logo Style End=== */
+
+/* **BUTTON Style Start** */
+.btn {
+    width: 150px;
+    height: 65px;
+    padding: 18px 35px;
+    background-color: #FD6E0A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+} /* ===BUTTON Style End=== */
+
+
+/* **************MAIN STYLE************** */
+
+/* **Header Styles Start** */
+header{
+    background-color: #FFF8F3;
+    padding-top: 50px;
+} /* ===Header Styles End=== */
+
+/* **NAV Style Start** */
+nav {
+    width: 71%;
+    max-width: 1140px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+nav .nav-list {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+    align-items: center;
+}
+
+nav .nav-list li a {
+    text-decoration: none;
+    color: #474747;
+    transition: all 0.1s ease-in-out;
+}
+
+nav .nav-list li a:hover {
+    color: #FD6E0A;
+} /* ===NAV Style End=== */
+
